@@ -4,45 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <title>My Study Break</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="page">
 
-    <h1 id="title">My Study Break</h1>
+    <div class="container">
 
-    <p>
-        Studying for a long time can be tiring.
-        This page is a small space for taking a short break.
-    </p>
+        <h1 id="title">My Study Break</h1>
 
-    <img id="studyImage"
-         src="study.jpg"
-         alt="Study break image"
-         width="500">
+        <p class="intro">
+            Studying for a long time can be tiring.
+            This page is a small space for taking a short break.
+        </p>
 
-    <h2>Take a Moment</h2>
+        <img
+            id="studyImage"
+            src="study.jpg"
+            alt="Study break image"
+        >
 
-    <p id="message">
-        Take a short break, relax, and come back when you feel ready.
-    </p>
+        <h2>Take a Moment</h2>
 
-    <button id="moodButton">
-        Change My Mood
-    </button>
+        <p id="message">
+            Take a short break, relax, and come back when you feel ready.
+        </p>
 
-    <button id="tipButton">
-        Show a Break Tip
-    </button>
+        <div class="buttons">
+            <button id="moodButton">Change My Mood</button>
 
-    <button id="surpriseButton">
-        Surprise Me
-    </button>
+            <button id="tipButton">Show a Break Tip</button>
 
-    <p>
-        Press the SPACE bar for another study reminder.
-    </p>
+            <button id="surpriseButton">Surprise Me</button>
+        </div>
 
-    <p id="result"></p>
+        <p class="keyboardText">
+            Press the SPACE bar for another study reminder.
+        </p>
+
+        <p id="result"></p>
+
+    </div>
 
     <script src="script.js"></script>
 
