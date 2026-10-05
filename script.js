@@ -1,6 +1,6 @@
 document.getElementById("moodButton").addEventListener("click", function () {
 
-    document.getElementById("page").style.backgroundColor = "lightblue";
+    document.getElementById("page").style.backgroundColor = "#dfe8dc";
 
     document.getElementById("title").innerHTML = "Feeling Refreshed!";
 
@@ -21,5 +21,17 @@ document.getElementById("surpriseButton").addEventListener("click", function () 
 
     document.getElementById("result").innerHTML =
         "You deserve a little rest ☕";
+
+});
+
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.code === "Space") {
+
+        document.getElementById("result").innerHTML =
+            "Rest your eyes for a moment and take a deep breath.";
+
+    }
 
 });
